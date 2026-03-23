@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balaji Printers | Industrial Printing Corporation</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0b0f1a;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    padding:25px 80px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.6);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+header h1{
+    font-size:22px;
+    font-weight:600;
+    letter-spacing:2px;
+    color:#d4af37;
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:35px;
+    font-size:14px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+    url('https://images.unsplash.com/photo-1581092160607-ee22731c4b12');
+    background-size:cover;
+    background-position:center;
+}
+
+.hero h2{
+    font-size:60px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.hero span{
+    color:#d4af37;
+}
+
+.hero p{
+    font-size:18px;
+    margin-bottom:35px;
+    opacity:0.8;
+}
+
+.btn{
+    padding:14px 35px;
+    border:2px solid #d4af37;
+    color:#d4af37;
+    text-decoration:none;
+    transition:0.4s;
+}
+
+.btn:hover{
+    background:#d4af37;
+    color:#000;
+}
+
+section{
+    padding:120px 80px;
+}
+
+.section-title{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:70px;
+    color:#d4af37;
+}
+
+.services{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:40px;
+}
+
+.card{
+    padding:40px;
+    border-radius:15px;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    border:1px solid #d4af37;
+}
+
+.card h3{
+    margin-bottom:15px;
+    color:#d4af37;
+}
+
+.contact{
+    background:#111827;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+}
+
+input, textarea{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+    background:#1f2937;
+    border:none;
+    color:#fff;
+}
+
+button{
+    padding:14px 30px;
+    background:#d4af37;
+    border:none;
+    cursor:pointer;
+    font-weight:600;
+}
+
+iframe{
+    width:100%;
+    height:300px;
+    border:none;
+}
+
+footer{
+    text-align:center;
+    padding:25px;
+    background:#000;
+    color:#aaa;
+    font-size:14px;
+}
+
+.whatsapp{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#25D366;
+    padding:15px;
+    border-radius:50%;
+    font-size:22px;
+    color:white;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>BALAJI PRINTERS</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h2>India's Leading <span>Industrial Printing</span> Corporation</h2>
+        <p>Labels • Tags • Barcodes • Packaging • Bulk Manufacturing Solutions</p>
+        <a href="#contact" class="btn">Request Corporate Quote</a>
+    </div>
+</div>
+
+<section id="services">
+    <h2 class="section-title">Our Core Expertise</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Premium Label Manufacturing</h3>
+            <p>High-volume industrial label production with precision finishing and adhesive technology.</p>
+        </div>
+        <div class="card">
+            <h3>Luxury Tag Printing</h3>
+            <p>Garment and product tags with gold foiling, embossing and premium texture materials.</p>
+        </div>
+        <div class="card">
+            <h3>Advanced Barcode Systems</h3>
+            <p>Retail and logistics barcode solutions with high-accuracy scanning compatibility.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Corporate Contact</h2>
+
+    <div class="contact-container">
+        <div>
+            <h3 style="color:#d4af37;margin-bottom:20px;">Head Office</h3>
+            <p>
+            C-76, Left Side, First Floor<br>
+            Okhla Industrial Estate, Phase 1<br>
+            New Delhi, India
+            </p>
+            <br>
+            <p>📞 8130944925</p>
+            <p>☎ 011-47540726</p>
+
+            <br><br>
+            <iframe 
+            src="https://maps.google.com/maps?q=Okhla%20Industrial%20Estate%20Phase%201&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+
+        <div>
+            <form onsubmit="sendMessage(event)">
+                <input type="text" placeholder="Company Name" required>
+                <input type="email" placeholder="Official Email" required>
+                <textarea rows="5" placeholder="Project Requirement" required></textarea>
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+© 2026 Balaji Printers | Industrial Printing Corporation | All Rights Reserved
+</footer>
+
+<a class="whatsapp" href="https://wa.me/918130944925" target="_blank">💬</a>
+
+<script>
+function sendMessage(e){
+    e.preventDefault();
+    alert("Thank you. Our corporate team will contact you within 24 hours.");
+}
+</script>
+
+</body>
+</html>
